@@ -55,7 +55,7 @@ class SummaryFragment : Fragment() {
 
             viewModel = sharedViewModel
 
-            sendButton.setOnClickListener { sendOrder() }
+            summaryFragment = this@SummaryFragment
         }
     }
 

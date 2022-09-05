@@ -55,7 +55,7 @@ class PickupFragment : Fragment() {
 
             viewModel = sharedViewModel
 
-            nextButton.setOnClickListener { goToNextScreen() }
+            pickupFragment = this@PickupFragment
         }
     }
 
