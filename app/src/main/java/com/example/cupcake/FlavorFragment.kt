@@ -58,7 +58,6 @@ class FlavorFragment : Fragment() {
             viewModel = sharedViewModel
 
             // Assign the fragment
-
             flavorFragment = this@FlavorFragment
         }
     }
