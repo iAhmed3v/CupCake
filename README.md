@@ -9,18 +9,10 @@ This app demonstrates multiple fragments in an activity, a shared ViewModel acro
 data binding, LiveData, and the Jetpack Navigation component.
 
 
-Pre-requisites
---------------
-* Familiar with activities and fragments
-* How to use styles and themes in the UI
-* Basic understanding of Jetpack architecture components including ViewModel and LiveData
-* Data binding and binding expressions
-* Kotlin syntax basics
+![IMG_20220907_153302222](https://user-images.githubusercontent.com/85061997/188880432-27c95079-de49-41de-9550-44317245bb8a.png)    ![IMG_20220907_153322222](https://user-images.githubusercontent.com/85061997/188880531-b2150606-ddbc-47d7-a466-04b72f12466e.png)
 
 
-Getting Started
----------------
-1. Install Android Studio, if you don't already have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
+![IMG_20220907_153506666](https://user-images.githubusercontent.com/85061997/188880751-cbc045f8-2944-42b2-8f5f-7af1d2ad2842.png)    ![IMG_20220907_153340000](https://user-images.githubusercontent.com/85061997/188880783-ecdec7d4-5000-4c64-bd64-4b62179a8654.png)     ![IMG_20220907_153400000](https://user-images.githubusercontent.com/85061997/188881014-ca5d4494-b7f2-4550-bc50-f6cd3b9a956c.png)
+       
+ 
+
