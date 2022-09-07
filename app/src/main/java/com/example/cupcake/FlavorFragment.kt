@@ -30,12 +30,13 @@ import com.example.cupcake.model.OrderViewModel
  */
 class FlavorFragment : Fragment() {
 
-    private val sharedViewModel: OrderViewModel by activityViewModels()
-
     // Binding object instance corresponding to the fragment_flavor.xml layout
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
     private var binding: FragmentFlavorBinding? = null
+
+    // Use the 'by activityViewModels()' Kotlin property delegate from the fragment-ktx artifact
+    private val sharedViewModel: OrderViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,9 +51,13 @@ class FlavorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
+            // Specify the fragment as the lifecycle owner
             lifecycleOwner = viewLifecycleOwner
 
+            // Assign the view model to a property in the binding class
             viewModel = sharedViewModel
+
+            // Assign the fragment
 
             flavorFragment = this@FlavorFragment
         }
@@ -65,8 +70,14 @@ class FlavorFragment : Fragment() {
         findNavController().navigate(R.id.action_flavorFragment_to_pickupFragment)
     }
 
+    /**
+     * Cancel the order and start over.
+     */
     fun cancelOrder() {
+        // Reset order in view model
         sharedViewModel.resetOrder()
+
+        // Navigate back to the [StartFragment] to start over
         findNavController().navigate(R.id.action_flavorFragment_to_startFragment)
     }
 
